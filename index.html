@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sindhri Restaurant</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+  <div id="progressBar"></div>
+
+<!-- Animated Background Glow -->
+<div class="background-glow"></div>
+
+
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container">
+    <div class="logo"><img src="./assets/logo3.jpeg" alt="Logo" style="width: 70px; height: 40px;"></div>
+     <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero fade">
+  <div class="hero-content">
+    <h1>Welcome to Sindhri Restaurant</h1>
+    <p>Authentic Sindhi Flavors, Served with Elegance</p>
+    <a href="#menu" class="btn">See Our Menu</a>
+  </div>
+</section>
+
+<section class="special-section fade">
+  <h2 class="section-title">We Offer Top Notch</h2>
+  
+
+  <div class="special-grid">
+    <div class="special-card">
+      <img src="./assets/service-1.jpg">
+      <h3>BreakFast</h3>
+      <span>⭐ Best Seller</span>
+    </div>
+
+    <div class="special-card">
+      <img src="./assets/service-2.jpg">
+      <h3>Appetizers</h3>
+      <span>🔥 Popular</span>
+    </div>
+
+    <div class="special-card">
+      <img src="./assets/service-3.jpg">
+      <h3>Drinks</h3>
+      <span>🔥 Popular</span>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- Menu Section -->
+<section id="menu" class="menu-section fade">
+  <h2 class="section-title">Our Menu</h2>
+  <div class="menu-filters">
+      <button class="btn filter-btn" data-filter="main">Main</button>
+      <button class="btn filter-btn" data-filter="drink">Drinks</button>
+      <button class="btn filter-btn" data-filter="dessert">Dessert</button>
+       <button class="btn filter-btn" data-filter="all">All</button>
+    </div>
+  <div class="menu-grid">
+    
+
+    <div class="menu-card fade" data-category="main">
+  <img src="./assets/biryani.jpg" alt="Biryani">
+  <h3>Biryani</h3>
+  <p class="price">Rs. 500</p>
+</div>
+
+<div class="menu-card fade" data-category="main">
+  <img src="./assets/karahi.jpg">
+  <h3>Chicken Karahi</h3>
+  <p class="price">Rs. 1000</p>
+</div>
+
+<div class="menu-card fade" data-category="main">
+  <img src="./assets/Mutton.jpg" alt="Mutton">
+  <h3>Mutton Peshawari Karahi</h3>
+  <p class="price">Rs. 600</p>
+</div>
+
+<div class="menu-card fade" data-category="main">
+  <img src="./assets/bbq.png">
+  <h3>BBQ Platter</h3>
+  <p class="price">Rs. 700</p>
+</div>
+
+
+<div class="menu-card fade" data-category="main">
+  <img src="./assets/Chicken.jpg" alt="Chicken">
+  <h3>Chicken Jalfrezi</h3>
+  <p class="price">Rs. 700</p>
+</div>
+
+
+<div class="menu-card fade" data-category="dessert">
+  <img src="./assets/desert.jpg">
+  <h3>Sweet Dessert</h3>
+  <p class="price">Rs. 200</p>
+</div>
+
+<div class="menu-card fade" data-category="dessert">
+  <img src="./assets/kheer.jpg" alt="Kheer">
+  <h3>Kheer</h3>
+  <p class="price">Rs. 220</p>
+</div>
+
+
+<div class="menu-card fade" data-category="drink">
+  <img src="./assets/tea.jpg">
+  <h3>Tea</h3>
+  <p class="price">Rs. 200</p>
+</div>
+
+<div class="menu-card fade" data-category="drink">
+  <img src="./assets/lemonade.jpg" alt="Lemonade">
+  <h3>Fresh Lemonade</h3>
+  <p class="price">Rs. 150</p>
+</div>
+    
+<div class="menu-card fade" data-category="drink">
+  <img src="./assets/Chae.jpg" alt="Chae">
+  <h3>Special Sindhi Chae</h3>
+  <p class="price">Rs. 100</p>
+</div>
+
+<div class="menu-card fade" data-category="drink">
+  <img src="./assets/mango-juice2.jpg" alt="Juice">
+  <h3>Fresh Mango Juice</h3>
+  <p class="price">Rs. 250</p>
+</div>
+  </div>
+</section>
+
+
+<!-- Reservation -->
+<section id="reservation" class="reservation-section fade">
+  <h2 class="section-title">Book a Table</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="date" required>
+    <input type="time" required>
+    <button class="btn" type="submit">Book Now</button>
+  </form>
+</section>
+
+<!-- About -->
+<section id="about" class="about-section fade">
+  <h2 class="section-title">Our Story</h2>
+  <p>sindhri has been nestled in the San Francisco area ever since 2000. This cozy establishment highlights our passion for market-fresh ingredients, 
+    honest cooking, and an enjoyable atmosphere. Our menu features a selection of dishes, all made in-house by our team of talented chefs.With some of the most delicious combinations of ingredients, there is something for everyone to enjoy. Loved by locals and traveling foodies alike, now is the perfect time for you to join us today at sindhri.</p>
+</section>
+
+
+<section class="gallery-section fade">
+  <h2 class="section-title">Gallery</h2>
+
+  <div class="gallery-grid">
+  
+    <img src="./assets/event-5.jpg" >
+    <img src="./assets/event-4.jpg">
+    <img src="./assets/event-3.jpg">
+    <img src="./assets/event-9.jpg">
+  </div>
+</section>
+
+
+
+<!-- Contact -->
+<section id="contact" class="contact-section fade">
+  <h2 class="section-title">Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="4"></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="fade">
+  <p>&copy; 2025 Sindhri Restaurant | All Rights Reserved</p>
+</footer>
+
+<!-- Scripts -->
+<script src="./assets/script.js"></script>
+</body>
+</html>
